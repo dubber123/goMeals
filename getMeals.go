@@ -100,21 +100,21 @@ func main(){
 
 
 		hour2, _ := strconv.Atoi(time.Now().Format("154"))
-		if hour2 >= 500 && hour2 <= 800 || hour2 >= 50 && hour2<=80 {//5:00am to 8:00 am
+		if hour2 >= 500 && hour2 <= 800 || hour2 >= 50 && hour2<=80 {
 			rand.Seed(time.Now().UnixNano())
 			randBreakfast := Database.Breakfast[rand.Intn(len(Database.Breakfast))]
 			fmt.Println("We found your time to be between 5:00 am and 8:00 am, so... \nYour randomly chosen breakfast for the day is "+randBreakfast.Name)
 			totalCost := strconv.FormatFloat(randBreakfast.Cost, 'f',2,64)
 			totalCalories := strconv.Itoa(randBreakfast.Calories)
 			fmt.Println(" Your Stat Line:\nCalories Consumed: "+totalCalories+"\nCost of Meal: "+totalCost)
-		} else if hour2 >= 801 && hour2 <= 1030 || hour2 >= 81 && hour2 <= 103{//8:01 am to 10:30 am
+		} else if hour2 >= 801 && hour2 <= 1030 || hour2 >= 81 && hour2 <= 103{
 			rand.Seed(time.Now().UnixNano())
 			randSnack := Database.Snack[rand.Intn(len(Database.Snack))]
 			fmt.Println("We found your time to be between 8:00 am and 10:30 am, so... \nYour random snack is "+ randSnack.Name+", don't get too fat!")
 			totalCost := strconv.FormatFloat(randSnack.Cost, 'f',2,64)
 			totalCalories := strconv.Itoa(randSnack.Calories)
 			fmt.Println(" Your Stat Line:\nCalories Consumed: "+totalCalories+"\nCost of Meal: "+totalCost)
-		} else if hour2 >= 1031 && hour2 <= 1415|| hour2 >= 130 && hour2 <= 140{//10:31 am to 2:15 pm
+		} else if hour2 >= 1031 && hour2 <= 1415|| hour2 >= 130 && hour2 <= 140{
 			rand.Seed(time.Now().UnixNano())
 			randLunch := Database.Lunch[rand.Intn(len(Database.Lunch))]
 			randDessert := Database.Dessert[rand.Intn(len(Database.Dessert))]
@@ -127,7 +127,7 @@ func main(){
 			totalCalories := strconv.Itoa(totalCaloriesUno)
 			fmt.Println(" Your Stat Line:\nCalories Consumed: "+totalCalories+"\nCost of Meal: "+totalCost+"\n...and a breathmint!")
 
-		} else if hour2 >= 1416 && hour2 <= 1700 || hour2 >= 1416 && hour2<=17{//2:15 pm to 5:00 pm
+		} else if hour2 >= 1416 && hour2 <= 1700 || hour2 >= 1416 && hour2<=17{
 			rand.Seed(time.Now().UnixNano())
 			randSnack := Database.Snack[rand.Intn(len(Database.Snack))]
 			fmt.Println("We found your time to be between 2:15 pm and 5:00 pm, so... \nYour random snack is "+ randSnack.Name+", don't get too fat!")
