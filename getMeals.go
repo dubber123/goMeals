@@ -43,10 +43,10 @@ func main(){
 		bytes, _ := json.Marshal(&Database)
 		ioutil.WriteFile("mealDatabase.json", bytes, os.ModePerm)
 	}()
-	choice := consoleInput("How would you like this meal to be generated?\n 1) Select Meal Name \n 2) Have Computer Generate a Meal Based on Current Time \n 3) Exit \n Input here: ")
+	choice := consoleInput("How would you like this meal to be generated?\n 1) Select Meal Name \n 2) Have Computer Generate a Meal Based on Current Time \n 3) Exit \nInput here:")
 	switch choice{
 	case "1":
-		choice2 := consoleInput("\nWhat meal are you about to eat?\n 1) Breakfast \n 2) Lunch \n 3) Dinner \n 4) Snack \n 5) Exit \n Input here:")
+		choice2 := consoleInput("What meal are you about to eat?\n 1) Breakfast \n 2) Lunch \n 3) Dinner \n 4) Snack \n 5) Exit \nInput here:")
 		switch choice2 {
 		case "1":
 			rand.Seed(time.Now().UnixNano())
@@ -86,9 +86,9 @@ func main(){
 			rand.Seed(time.Now().UnixNano())
 			randSnack := Database.Snack[rand.Intn(len(Database.Snack)-1)]
 			fmt.Println("Your random snack is "+ randSnack.Name+", don't get too fat!")
-			totalCost := strconv.FormatFloat(randSnack.Cost, 'f',6,64)
+			totalCost := strconv.FormatFloat(randSnack.Cost, 'f',2,64)
 			totalCalories := strconv.Itoa(randSnack.Calories)
-			fmt.Println(" Your Stat Line:\n\nCalories Consumed: "+totalCalories+"\n Cost of Meal: "+totalCost)
+			fmt.Println(" Your Stat Line:\nCalories Consumed: "+totalCalories+"\n Cost of Meal: "+totalCost)
 
 		case "5":
 			fmt.Println("\nShutting down.")
@@ -97,9 +97,7 @@ func main(){
 			panic("Please use a number when accessing elements in dubber's menus. Thx")
 		}
 	case "2":
-		j := time.Now().Format("154")
-		fmt.Println(j)
-		hour2, _ := strconv.Atoi(j)
+		hour2, _ := strconv.Atoi(time.Now().Format("154"))
 		if hour2 >= 500 && hour2 <= 800 || hour2 >= 50 && hour2<=80 {
 			rand.Seed(time.Now().UnixNano())
 			randBreakfast := Database.Breakfast[rand.Intn(len(Database.Breakfast)-1)]
