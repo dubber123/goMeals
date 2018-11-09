@@ -20,3 +20,4 @@ Big thanks to Discoli for teaching me the basics of GoLang (structs, json marsha
 
 EDIT:
 This is my first project in GoLang. Yes, it's dirty. I would put each file in it's own folder but I'm too lazy. Still works the same. <3 -dubber
+**UPDATED TO GOLANG 1.11.2
