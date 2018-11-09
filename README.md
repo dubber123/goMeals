@@ -1,7 +1,7 @@
 # goMeals
 Simple meal maker program to learn how to manipulate json databases using console inputs in Go.
 This program has two files: one to add meals (also create a DB on first run) and one to get a random meal with statistics.
-This is to learn how to use json marshalling and ioutil's WriteFile in GoLang.
+This is to learn how to use json marshalling and writing json files (using ioutil) in GoLang.
 You need minimum 2 meals per category before trying to manipulate the database in getMeals.go.
 
 Installation:
