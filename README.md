@@ -17,3 +17,6 @@ Installation:
 If you have any questions, feel free to contact me on discord. My name is dubber#7428. I have family/friends on so feel free to shoot me a friend req.
 
 Big thanks to Discoli for teaching me the basics of GoLang (structs, json marshalling, golang funcs, defer funcs, ioutil, strings, etc etc).
+
+EDIT:
+This is my first project in GoLang. Yes, it's dirty. I would put each file in it's own folder but I'm too lazy. Still works the same. <3 -dubber
