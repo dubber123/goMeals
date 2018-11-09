@@ -114,7 +114,7 @@ func main(){
 		fmt.Println("\nShutting down.")
 		os.Exit(0)
 	default:
-		panic("Yeah, you fucked up. You need to specify a number 1-6 that attributes to each meal in the menu above.")
+		panic("Yeah, you screwed up. You need to specify a number 1-6 that attributes to each meal in the menu above.")
 	}
 	fmt.Println("\nSuccess!")
 }
