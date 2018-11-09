@@ -70,7 +70,7 @@ func main(){
 			totalCalories := strconv.Itoa(totalCaloriesUno)
 			fmt.Println(" Your Stat Line:\nCalories Consumed: "+totalCalories+"\nCost of Meal: "+totalCost+"\n...and a breathmint!")
 
-	case "3":
+		case "3":
 			rand.Seed(time.Now().UnixNano())
 			randDinner := Database.Dinner[rand.Intn(len(Database.Dinner)-1)]
 			randDessert := Database.Dessert[rand.Intn(len(Database.Dessert)-1)]
