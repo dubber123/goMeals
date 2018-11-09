@@ -27,7 +27,7 @@ var Database struct{
 func init(){
 	bytes, err := ioutil.ReadFile("mealDatabase.json")
 	if err != nil{
-		panic("The database does not exist. Please run addMeals.go and add a few meals before trying to manipulate them here!")
+		panic("The database does not exist. Please run addMeals.go and add at least 2 meals per course before trying to manipulate them here!")
 	}
 	json.Unmarshal(bytes, &Database)
 }
