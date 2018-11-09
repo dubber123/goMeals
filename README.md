@@ -14,6 +14,6 @@ Installation:
  -automatic is where it finds the current time of day and matches you up with a meal
 6. Enjoy!
 
-If you have any questions, feel free to contact me on discord. My name is dubber#7428.
+If you have any questions, feel free to contact me on discord. My name is dubber#7428. I have family/friends on so feel free to shoot me a friend req.
 
 Big thanks to Discoli for teaching me the basics of GoLang (structs, json marshalling, golang funcs, defer funcs, ioutil, strings, etc etc).
