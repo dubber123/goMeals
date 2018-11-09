@@ -103,14 +103,14 @@ func main(){
 		if hour2 >= 500 && hour2 <= 800 || hour2 >= 50 && hour2<=80 {
 			rand.Seed(time.Now().UnixNano())
 			randBreakfast := Database.Breakfast[rand.Intn(len(Database.Breakfast)-1)]
-			fmt.Println("We found your time to be between 5:00 am and 8:00 am, so... \nYour randomly chosen breakfast for the day is "+randBreakfast.Name)
+			fmt.Println("Found your time to be between 5:00 am and 8:00 am, so... \nYour randomly chosen breakfast for the day is "+randBreakfast.Name)
 			totalCost := strconv.FormatFloat(randBreakfast.Cost, 'f',2,64)
 			totalCalories := strconv.Itoa(randBreakfast.Calories)
 			fmt.Println(" Your Stat Line:\nCalories Consumed: "+totalCalories+"\nCost of Meal: "+totalCost)
 		} else if hour2 >= 801 && hour2 <= 1030 || hour2 >= 81 && hour2 <= 103{
 			rand.Seed(time.Now().UnixNano())
 			randSnack := Database.Snack[rand.Intn(len(Database.Snack)-1)]
-			fmt.Println("We found your time to be between 8:00 am and 10:30 am, so... \nYour random snack is "+ randSnack.Name+", don't get too fat!")
+			fmt.Println("Found your time to be between 8:00 am and 10:30 am, so... \nYour random snack is "+ randSnack.Name+", don't get too fat!")
 			totalCost := strconv.FormatFloat(randSnack.Cost, 'f',2,64)
 			totalCalories := strconv.Itoa(randSnack.Calories)
 			fmt.Println(" Your Stat Line:\nCalories Consumed: "+totalCalories+"\nCost of Meal: "+totalCost)
@@ -118,7 +118,7 @@ func main(){
 			rand.Seed(time.Now().UnixNano())
 			randLunch := Database.Lunch[rand.Intn(len(Database.Lunch)-1)]
 			randDessert := Database.Dessert[rand.Intn(len(Database.Dessert)-1)]
-			fmt.Println("We found your time to be between 10:30 am and 2:15 pm, so... \nYour randomly chosen lunch for the afternoon is "+randLunch.Name)
+			fmt.Println("Found your time to be between 10:30 am and 2:15 pm, so... \nYour randomly chosen lunch for the afternoon is "+randLunch.Name)
 			fmt.Println("Once you are done with that, you can enjoy "+randDessert.Name)
 			fmt.Println("Make sure to pop a breathmint after lunch, too!")
 			totalCostUno := randLunch.Cost + randDessert.Cost
@@ -130,7 +130,7 @@ func main(){
 		} else if hour2 >= 1416 && hour2 <= 1700 || hour2 >= 1416 && hour2<=17{
 			rand.Seed(time.Now().UnixNano())
 			randSnack := Database.Snack[rand.Intn(len(Database.Snack)-1)]
-			fmt.Println("We found your time to be between 2:15 pm and 5:00 pm, so... \nYour random snack is "+ randSnack.Name+", don't get too fat!")
+			fmt.Println("Found your time to be between 2:15 pm and 5:00 pm, so... \nYour random snack is "+ randSnack.Name+", don't get too fat!")
 			totalCost := strconv.FormatFloat(randSnack.Cost, 'f',2,64)
 			totalCalories := strconv.Itoa(randSnack.Calories)
 			fmt.Println(" Your Stat Line:\nCalories Consumed: "+totalCalories+"\nCost of Meal: "+totalCost)
@@ -138,7 +138,7 @@ func main(){
 			rand.Seed(time.Now().UnixNano())
 			randDinner := Database.Dinner[rand.Intn(len(Database.Dinner)-1)]
 			randDessert := Database.Dessert[rand.Intn(len(Database.Dessert)-1)]
-			fmt.Println("We found your time to be between 5:00 pm and 7:20 pm, so... \nYour randomly chosen dinner for the night is "+randDinner.Name)
+			fmt.Println("Found your time to be between 5:00 pm and 7:20 pm, so... \nYour randomly chosen dinner for the night is "+randDinner.Name)
 			fmt.Println("Once you are done with that, you can enjoy "+randDessert.Name)
 			totalCostUno := randDinner.Cost + randDessert.Cost
 			totalCaloriesUno := randDinner.Calories + randDessert.Calories
@@ -148,7 +148,7 @@ func main(){
 		} else if hour2 >= 1921 && hour2 <= 2215{
 			rand.Seed(time.Now().UnixNano())
 			randSnack := Database.Snack[rand.Intn(len(Database.Snack)-1)]
-			fmt.Println("We found your time to be between 7:20 pm and 10:15 pm, so... \nYour random snack is "+ randSnack.Name+", don't get too fat!")
+			fmt.Println("Found your time to be between 7:20 pm and 10:15 pm, so... \nYour random snack is "+ randSnack.Name+", don't get too fat!")
 			totalCost := strconv.FormatFloat(randSnack.Cost, 'f',2,64)
 			totalCalories := strconv.Itoa(randSnack.Calories)
 			fmt.Println(" Your Stat Line:\nCalories Consumed: "+totalCalories+"\nCost of Meal: "+totalCost)
